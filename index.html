@@ -11,29 +11,31 @@ body{
 text-align:center;
 font-family:Arial;
 background:linear-gradient(#ffe4e1,#fff0f5);
-padding-top:100px;
+padding-top:80px;
 }
 
 #candle{
-font-size:90px;
+font-size:40px;   /* smaller candle */
 cursor:pointer;
+margin-top:10px;
 }
 
 #message{
 display:none;
-margin-top:30px;
-font-size:28px;
+margin-top:25px;
+font-size:20px;
 color:#d63384;
 }
 
 button{
-margin-top:20px;
-padding:12px 20px;
+margin-top:25px;
+padding:6px 12px;   /* smaller button */
 border:none;
 background:#ff69b4;
 color:white;
-border-radius:20px;
-font-size:16px;
+border-radius:8px;
+font-size:14px;
+cursor:pointer;
 }
 
 </style>
@@ -60,7 +62,7 @@ This is something I made just for you.
 <p>This is my heart written in code…</p>
 </div>
 
-<h2>Make a wish and blow the candle 🕯️</h2>
+<p>Make a wish and blow the candle</p>
 
 <div id="candle" onclick="blowCandle()">
 🎂🕯️🔥
@@ -74,13 +76,13 @@ But until then, I hope this little surprise makes you smile 💗
 </div>
 
 <script>
-
 function blowCandle(){
 document.getElementById("candle").innerHTML="🎂🕯️";
 document.getElementById("message").style.display="block";
 }
-
 </script>
+
+<br>
 
 <video width="200" autoplay loop muted playsinline
 style="border:4px solid pink;border-radius:15px;">
